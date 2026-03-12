@@ -10,6 +10,7 @@ datasource db {
 model Product {
   id          Int      @id @default(autoincrement())
   title       String
+  description String?  @db.Text
   category    String   // "remeras", "pantalones", "gorras", "conjuntos"
   price       Float
   images      String   @db.Text // JSON string of image URLs

@@ -67,8 +67,7 @@
 
 .price {
   font-size: 2rem;
-  font-weight: 700;
-  color: var(--accent);
+  color: var(--foreground);
   margin-bottom: 3rem;
 }
 
@@ -103,7 +102,7 @@
   background: var(--accent);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 51, 102, 0.2);
+  box-shadow: 0 5px 15px rgba(51, 116, 255, 0.3);
 }
 
 .description h3 {
@@ -173,8 +172,7 @@
 }
 
 .featuredInfo p {
-  color: var(--accent);
-  font-weight: 700;
+  color: var(--foreground);
 }
 
 @keyframes fadeIn {

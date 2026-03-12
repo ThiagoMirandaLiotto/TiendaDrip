@@ -4,13 +4,14 @@ import prisma from '@/lib/prisma';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { title, category, price, images, isFeatured } = body;
+    const { title, category, price, description, images, isFeatured } = body;
 
     const product = await prisma.product.create({
       data: {
         title,
         category,
         price: Number(price),
+        description: description || 'Prenda exclusiva de alta calidad. Diseñada para destacar con un estilo único y moderno.',
         images,
         isFeatured: Boolean(isFeatured),
       },

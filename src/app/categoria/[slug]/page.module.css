@@ -43,7 +43,7 @@
 .card:hover {
   transform: translateY(-8px);
   border-color: var(--accent);
-  box-shadow: 0 10px 30px rgba(255, 51, 102, 0.1);
+  box-shadow: 0 10px 30px rgba(51, 116, 255, 0.1);
 }
 
 .imageContainer {
@@ -78,8 +78,7 @@
 
 .price {
   font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--accent);
+  color: var(--foreground);
 }
 
 @keyframes fadeIn {
